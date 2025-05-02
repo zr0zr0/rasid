@@ -1,0 +1,476 @@
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>راصد - نظام الرصد الإعلامي والأمني</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="logo-container">
+                <img src="https://i.postimg.cc/J7gh3gwh/rsd-wzrat-ldkhlyat-logo.jpg" alt="راصد" class="logo">
+                <h1 class="system-name">راصد</h1>
+            </div>
+            <div class="sidebar-divider"></div>
+            <div class="sidebar-sections">
+                <div class="section active" data-section="intro">
+                    <i class="fas fa-file-alt"></i>
+                    <span>التمهيد والمعلومات الأولية</span>
+                </div>
+                <div class="section" data-section="local">
+                    <i class="fas fa-newspaper"></i>
+                    <span>الرصد المحلي والإعلام الوطني</span>
+                </div>
+                <div class="section" data-section="amran">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <span>رصد عمران والمحافظات</span>
+                </div>
+                <div class="section" data-section="enemy">
+                    <i class="fas fa-user-secret"></i>
+                    <span>رصد الأعداء والمنافقين</span>
+                </div>
+                <div class="section" data-section="international">
+                    <i class="fas fa-globe"></i>
+                    <span>الرصد الإقليمي والدولي</span>
+                </div>
+                <div class="section" data-section="intelligence">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>الرصد الاستخباري والتجميعي</span>
+                </div>
+            </div>
+            <div class="sidebar-footer">
+                <div class="status-indicator">
+                    <div class="status-dot active"></div>
+                    <span>متصل</span>
+                </div>
+                <div class="system-info">
+                    <span>إصدار النظام: 1.0.2</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="top-bar">
+                <div class="search-container">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="بحث في النماذج والتقارير...">
+                </div>
+                <div class="user-actions">
+                    <div class="notification-icon">
+                        <i class="fas fa-bell"></i>
+                        <span class="badge">3</span>
+                    </div>
+                    <div class="date-display">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span id="current-date"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dashboard">
+                <div class="dashboard-header">
+                    <h2>لوحة البيانات الرئيسية</h2>
+                    <div class="dashboard-stats">
+                        <div class="stat-card">
+                            <i class="fas fa-file-alt"></i>
+                            <div class="stat-info">
+                                <span class="stat-number">24</span>
+                                <span class="stat-label">تقارير اليوم</span>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <i class="fas fa-eye"></i>
+                            <div class="stat-info">
+                                <span class="stat-number">148</span>
+                                <span class="stat-label">رصد أسبوعي</span>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <div class="stat-info">
+                                <span class="stat-number">7</span>
+                                <span class="stat-label">تنبيهات عاجلة</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-content">
+                    <h3>البنية التشغيلية حسب تسلسل التقرير اليومي</h3>
+                    
+                    <!-- Section: التمهيد والمعلومات الأولية -->
+                    <div class="form-section active" id="intro">
+                        <h4>أولاً: النماذج العامة للتمهيد والمعلومات الأولية</h4>
+                        <div class="cards-container">
+                            <div class="form-card" data-form-id="7Af3PHGK1eus">
+                                <div class="card-icon pulsing">
+                                    <i class="fas fa-file-invoice"></i>
+                                </div>
+                                <div class="card-content">
+                                    <h5>نموذج أولي (هامش الرصد)</h5>
+                                    <p>نموذج أساسي لتجهيز العمليات الرصدية اليومية والمعلومات الأولية</p>
+                                </div>
+                                <div class="card-indicators">
+                                    <span class="priority high">أولوية عالية</span>
+                                    <span class="frequency">استخدام يومي</span>
+                                </div>
+                            </div>
+                            <div class="form-card" data-form-id="xcwH3SgzBSus">
+                                <div class="card-icon pulsing">
+                                    <i class="fas fa-clipboard-list"></i>
+                                </div>
+                                <div class="card-content">
+                                    <h5>تقرير السجل اليومي للرصد</h5>
+                                    <p>توثيق شامل للأنشطة الرصدية اليومية بمختلف المجالات</p>
+                                </div>
+                                <div class="card-indicators">
+                                    <span class="priority high">أولوية عالية</span>
+                                    <span class="frequency">استخدام يومي</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Section: الرصد المحلي والإعلام الوطني -->
+                    <div class="form-section" id="local">
+                        <h4>ثانياً: الرصد المحلي والإعلام الوطني</h4>
+                        <div class="cards-container">
+                            <div class="form-card" data-form-id="wti6PSxxfkus">
+                                <div class="card-icon">
+                                    <i class="fas fa-newspaper"></i>
+                                </div>
+                                <div class="card-content">
+                                    <h5>نموذج رصد الأخبار الإعلامية العامة</h5>
+                                    <p>رصد وتحليل الأخبار والمحتوى الإعلامي على المستوى المحلي</p>
+                                </div>
+                                <div class="card-indicators">
+                                    <span class="priority medium">أولوية متوسطة</span>
+                                    <span class="frequency">استخدام يومي</span>
+                                </div>
+                            </div>
+                            <div class="form-card" data-form-id="9yQY2vD7dCus">
+                                <div class="card-icon">
+                                    <i class="fas fa-file-alt"></i>
+                                </div>
+                                <div class="card-content">
+                                    <h5>نموذج توثيق منشور تفصيلي (رئيسي)</h5>
+                                    <p>تحليل معمق للمنشورات ذات الأهمية الخاصة والتأثير العالي</p>
+                                </div>
+                                <div class="card-indicators">
+                                    <span class="priority high">أولوية عالية</span>
+                                    <span class="frequency">متكرر</span>
+                                </div>
+                            </div>
+                            <div class="form-card" data-form-id="nXy5ZbWBpPus">
+                                <div class="card-icon">
+                                    <i class="fas fa-bullhorn"></i>
+                                </div>
+                                <div class="card-content">
+                                    <h5>نموذج رصد شائعة</h5>
+                                    <p>رصد وتحليل الشائعات وإجراءات التعامل معها</p>
+                                </div>
+                                <div class="card-indicators">
+                                    <span class="priority high">أولوية عالية</span>
+                                    <span class="frequency">عند الحاجة</span>
+                                </div>
+                            </div>
+                            <div class="form-card" data-form-id="86iN4ntBuuus">
+                                <div class="card-icon">
+                                    <i class="fas fa-broadcast-tower"></i>
+                                </div>
+                                <div class="card-content">
+                                    <h5>نموذج رصد حملة إعلامية</h5>
+                                    <p>تتبع وتحليل الحملات الإعلامية المنظمة</p>
+                                </div>
+                                <div class="card-indicators">
+                                    <span class="priority medium">أولوية متوسطة</span>
+                                    <span class="frequency">أسبوعي</span>
+                                </div>
+                            </div>
+                            <div class="form-card" data-form-id="r2EjsCyzFRus">
+                                <div class="card-icon">
+                                    <i class="fas fa-calendar-day"></i>
+                                </div>
+                                <div class="card-content">
+                                    <h5>نموذج رصد - مناسبة إعلامية</h5>
+                                    <p>رصد وتحليل المناسبات والأحداث ذات البعد الإعلامي</p>
+                                </div>
+                                <div class="card-indicators">
+                                    <span class="priority medium">أولوية متوسطة</span>
+                                    <span class="frequency">عند الحدث</span>
+                                </div>
+                            </div>
+                            <div class="form-card" data-form-id="sXfXnGMjLgus">
+                                <div class="card-icon">
+                                    <i class="fas fa-volume-up"></i>
+                                </div>
+                                <div class="card-content">
+                                    <h5>نموذج رصد النغمة الإعلامية</h5>
+                                    <p>تحليل نبرة وتوجه الخطاب الإعلامي</p>
+                                </div>
+                                <div class="card-indicators">
+                                    <span class="priority low">أولوية منخفضة</span>
+                                    <span class="frequency">أسبوعي</span>
+                                </div>
+                            </div>
+                            <div class="form-card" data-form-id="9cjJeP5ENJus">
+                                <div class="card-icon">
+                                    <i class="fas fa-hashtag"></i>
+                                </div>
+                                <div class="card-content">
+                                    <h5>نموذج تقييم وسم (هاشتاق)</h5>
+                                    <p>رصد وتحليل الوسوم النشطة وتأثيرها</p>
+                                </div>
+                                <div class="card-indicators">
+                                    <span class="priority medium">أولوية متوسطة</span>
+                                    <span class="frequency">عند التصدر</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Section: رصد عمران والمحافظات -->
+                    <div class="form-section" id="amran">
+                        <h4>ثالثاً: رصد عمران والمحافظات</h4>
+                        <div class="cards-container">
+                            <div class="form-card" data-form-id="9yQY2vD7dCus">
+                                <div class="card-icon">
+                                    <i class="fas fa-map-pin"></i>
+                                </div>
+                                <div class="card-content">
+                                    <h5>نموذج رصد وتحليل منشورات من أبناء عمران</h5>
+                                    <p>متابعة وتحليل محتوى المنشورات من محافظة عمران</p>
+                                </div>
+                                <div class="card-indicators">
+                                    <span class="priority high">أولوية عالية</span>
+                                    <span class="frequency">يومي</span>
+                                </div>
+                            </div>
+                            <div class="form-card" data-form-id="ad4cAtCM66us">
+                                <div class="card-icon">
+                                    <i class="fas fa-user-secret"></i>
+                                </div>
+                                <div class="card-content">
+                                    <h5>نموذج رصد مشبوه جديد (خاص بعمران)</h5>
+                                    <p>توثيق ومتابعة أنشطة العناصر المشبوهة</p>
+                                </div>
+                                <div class="card-indicators">
+                                    <span class="priority high">أولوية عالية</span>
+                                    <span class="frequency">عند الرصد</span>
+                                </div>
+                            </div>
+                            <div class="form-card" data-form-id="tC6Kens8Cbus">
+                                <div class="card-icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <div class="card-content">
+                                    <h5>نموذج رصد المجموعات العامة أو شبه المغلقة</h5>
+                                    <p>متابعة أنشطة المجموعات الإلكترونية المؤثرة</p>
+                                </div>
+                                <div class="card-indicators">
+                                    <span class="priority medium">أولوية متوسطة</span>
+                                    <span class="frequency">أسبوعي</span>
+                                </div>
+                            </div>
+                            <div class="form-card" data-form-id="6BgQgg3UmXus">
+                                <div class="card-icon">
+                                    <i class="fas fa-bomb"></i>
+                                </div>
+                                <div class="card-content">
+                                    <h5>نموذج رصد الانفجارات الإعلامية المفاجئة</h5>
+                                    <p>رصد وتحليل القضايا الإعلامية الطارئة</p>
+                                </div>
+                                <div class="card-indicators">
+                                    <span class="priority high">أولوية عالية</span>
+                                    <span class="frequency">عند الحدث</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Section: رصد الأعداء والمنافقين -->
+                    <div class="form-section" id="enemy">
+                        <h4>رابعاً: رصد الأعداء والمنافقين</h4>
+                        <div class="cards-container">
+                            <div class="form-card" data-form-id="xfhH7MNoP5us">
+                                <div class="card-icon">
+                                    <i class="fas fa-fingerprint"></i>
+                                </div>
+                                <div class="card-content">
+                                    <h5>نموذج رصد النصوص المشفّرة والمحتوى المموّه</h5>
+                                    <p>تحليل وكشف المحتوى المشفر والرسائل الخفية</p>
+                                </div>
+                                <div class="card-indicators">
+                                    <span class="priority high">أولوية عالية</span>
+                                    <span class="frequency">عند الاكتشاف</span>
+                                </div>
+                            </div>
+                            <div class="form-card" data-form-id="cNjdxRq4pfus">
+                                <div class="card-icon">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                <div class="card-content">
+                                    <h5>نموذج رصد النمط السلوكي الرقمي</h5>
+                                    <p>تحليل أنماط النشاط الرقمي للجهات المعادية</p>
+                                </div>
+                                <div class="card-indicators">
+                                    <span class="priority medium">أولوية متوسطة</span>
+                                    <span class="frequency">أسبوعي</span>
+                                </div>
+                            </div>
+                            <div class="form-card" data-form-id="c9aDLuuiVWus">
+                                <div class="card-icon">
+                                    <i class="fas fa-exchange-alt"></i>
+                                </div>
+                                <div class="card-content">
+                                    <h5>نموذج رصد تحوّل الولاء (متابعات الحسابات)</h5>
+                                    <p>تتبع تغير الولاءات وانتقال المتابعين</p>
+                                </div>
+                                <div class="card-indicators">
+                                    <span class="priority medium">أولوية متوسطة</span>
+                                    <span class="frequency">شهري</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Section: الرصد الإقليمي والدولي -->
+                    <div class="form-section" id="international">
+                        <h4>خامساً: الرصد الإقليمي والدولي</h4>
+                        <div class="cards-container">
+                            <div class="form-card" data-form-id="svMzucJ1tpus">
+                                <div class="card-icon">
+                                    <i class="fas fa-globe-americas"></i>
+                                </div>
+                                <div class="card-content">
+                                    <h5>نموذج رصد وتحليل الإعلام الإقليمي والدولي عن اليمن</h5>
+                                    <p>متابعة وتحليل التغطية الإعلامية الخارجية عن اليمن</p>
+                                </div>
+                                <div class="card-indicators">
+                                    <span class="priority high">أولوية عالية</span>
+                                    <span class="frequency">يومي</span>
+                                </div>
+                            </div>
+                            <div class="form-card" data-form-id="svMzucJ1tpus">
+                                <div class="card-icon">
+                                    <i class="fas fa-eye-slash"></i>
+                                </div>
+                                <div class="card-content">
+                                    <h5>نموذج رصد العدو الصهيوني والإعلام الغربي</h5>
+                                    <p>رصد وتحليل إعلام العدو الصهيوني والأجندة الغربية</p>
+                                </div>
+                                <div class="card-indicators">
+                                    <span class="priority high">أولوية عالية</span>
+                                    <span class="frequency">يومي</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Section: الرصد الاستخباري والتجميعي -->
+                    <div class="form-section" id="intelligence">
+                        <h4>سادساً: الرصد الاستخباري والتجميعي</h4>
+                        <div class="cards-container">
+                            <div class="form-card" data-form-id="8sE2jsopk5us">
+                                <div class="card-icon">
+                                    <i class="fas fa-database"></i>
+                                </div>
+                                <div class="card-content">
+                                    <h5>نموذج رصد وتجميع: بنك الأهداف والمصادر</h5>
+                                    <p>قاعدة بيانات شاملة للأهداف والمصادر الإعلامية</p>
+                                </div>
+                                <div class="card-indicators">
+                                    <span class="priority high">أولوية عالية</span>
+                                    <span class="frequency">مستمر</span>
+                                </div>
+                            </div>
+                            <div class="form-card" data-form-id="svMzucJ1tpus">
+                                <div class="card-icon">
+                                    <i class="fas fa-microphone"></i>
+                                </div>
+                                <div class="card-content">
+                                    <h5>نموذج جمع بيانات الإعلاميين</h5>
+                                    <p>توثيق معلومات عن الشخصيات الإعلامية</p>
+                                </div>
+                                <div class="card-indicators">
+                                    <span class="priority medium">أولوية متوسطة</span>
+                                    <span class="frequency">مستمر</span>
+                                </div>
+                            </div>
+                            <div class="form-card" data-form-id="svMzucJ1tpus">
+                                <div class="card-icon">
+                                    <i class="fas fa-user-tie"></i>
+                                </div>
+                                <div class="card-content">
+                                    <h5>نموذج جمع بيانات الشخصيات العامة والمؤثرين</h5>
+                                    <p>توثيق معلومات عن الشخصيات العامة والمؤثرة</p>
+                                </div>
+                                <div class="card-indicators">
+                                    <span class="priority medium">أولوية متوسطة</span>
+                                    <span class="frequency">مستمر</span>
+                                </div>
+                            </div>
+                            <div class="form-card" data-form-id="svMzucJ1tpus">
+                                <div class="card-icon">
+                                    <i class="fas fa-exclamation-circle"></i>
+                                </div>
+                                <div class="card-content">
+                                    <h5>نموذج جمع بيانات المحرضين والمشتبه بهم</h5>
+                                    <p>توثيق معلومات عن العناصر المحرضة والمشبوهة</p>
+                                </div>
+                                <div class="card-indicators">
+                                    <span class="priority high">أولوية عالية</span>
+                                    <span class="frequency">عند الرصد</span>
+                                </div>
+                            </div>
+                            <div class="form-card" data-form-id="svMzucJ1tpus">
+                                <div class="card-icon">
+                                    <i class="fas fa-file-medical-alt"></i>
+                                </div>
+                                <div class="card-content">
+                                    <h5>نموذج جمع بيانات الحالات الخاصة</h5>
+                                    <p>توثيق معلومات عن الحالات ذات الطبيعة الخاصة</p>
+                                </div>
+                                <div class="card-indicators">
+                                    <span class="priority high">أولوية عالية</span>
+                                    <span class="frequency">عند الحاجة</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal for forms -->
+        <div class="modal" id="formModal">
+            <div class="modal-content fullscreen">
+                <div class="modal-header">
+                    <h3 id="modal-title">عنوان النموذج</h3>
+                    <span class="close-modal">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <div id="form-container"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <h2>جاري تحميل نظام راصد</h2>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
